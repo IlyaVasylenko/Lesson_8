@@ -1,0 +1,132 @@
+body{
+	margin:0px;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+.content {
+    margin: 0px auto;
+    padding: 50px 15px;
+	max-width: 1330px;
+}
+.block_header{
+	display: flex;
+	background-color: rgb(19,26,53);
+	border-radius: 20px;
+	height: 150px;
+	width:50%;
+	transition: width 2s ease;
+	justify-content: flex-start;
+	align-items: center;
+}
+.block_header:hover{
+	width: 100%;
+
+}
+.img{
+	width:20px;
+	height: 20px;
+	margin-right: 5px;
+}
+.info{
+	list-style-type: none;
+	margin-top: 20px;
+	padding: 15px auto;
+	color: white;
+	margin-left: 5px;
+	
+}
+.info:first-child{
+	margin-top: 0px;
+}
+span{
+	text-transform: uppercase;
+	padding-bottom: 5px;
+}
+.block_animation{
+	display: flex;
+	width:100%;
+	height:150px;
+	margin-top: 10px;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(19,26,53);
+	border-radius: 20px;
+
+}
+.figure{
+	height:100px;
+	width:75px;
+	background-color: white;
+	animation: skew 3s infinite;
+	transform: skew(20deg);
+	animation-direction: alternate;
+}
+@keyframes skew{
+	0%{
+		transform: skewX(20deg);
+	}
+	100%{
+		transform: skewX(-20deg);
+	}
+
+}
+.image_css{
+	background:url("https://kfund.github.io/web-front-end/lesson8/assets/images/universe.jpg") transparent no-repeat center center / cover;
+	margin-top: 10px;
+	width: 100%;
+	height: 50vh;
+	margin-bottom: 10px;
+}
+.image{
+	max-width: 100%;
+}
+.align_photo{
+	text-align: center;
+}
+.image_all{
+	display: flex;
+	
+}
+
+.image_object{
+	overflow: hidden;
+	position: relative;
+	margin: 0px 0px 20px 0px;
+	padding: 0px 0px 58% 0px;
+}
+.imag{
+	flex:0 1 33.333%;
+	padding: 0px 15px;
+}
+.image_object img{
+	object-fit: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.last{
+	margin-top: 50px;
+}
+.last_block{
+	display:flex;
+	margin-top: 50px;
+}
+.last_image{
+	flex:0 0 33.333%;
+	position: relative;
+	min-height: 200px;
+}
+.last_image img{
+	object-fit: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
